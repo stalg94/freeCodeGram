@@ -7,7 +7,7 @@
             <img src="https://i1.sndcdn.com/avatars-000326709935-8bqnrw-t240x240.jpg" class="rounded-circle">
         </div>
     	<div class="col-9 pt-5">
-            <div><h1 class="px-5 font:weight-bold">freeCodeGram</h1></div>
+            <div><h1 class="px-5 font:weight-bold">{{$user -> username}}</h1></div>
             <div class="d-flex">
                 <div class="px-5"><strong>153</strong> posts</div>
                 <div class="px-5"><strong>23k</strong> followers</div>

@@ -36,7 +36,7 @@
                 </div>
             @endif
             <div class="title m-b-md">
-                FreeCodeGram<<<<<
+                FreeCodeGram
             </div>
 
         </div>
