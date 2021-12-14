@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfilesController;
 use App\Http\Controllers\PostController;
-
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +25,5 @@ Auth::routes();
 Route::get('/profile/{user}', [ProfilesController::class, 'index'])->name('profile.show');
 
 Route::get('/p/create',[PostController::class, 'create'] );
+Route::get('/p/{post}',[PostController::class, 'show'] );
 Route::post('/p',[PostController::class, 'store'] );
