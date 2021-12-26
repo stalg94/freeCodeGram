@@ -44,7 +44,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
-                        <a href="{{ url('/profile/' . auth()->user()->id) }}" class="btn btn-primary">Home</a>
+
                         <!-- guthentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -59,6 +59,7 @@
                                 </li>
                             @endif
                         @else
+                        <a href="{{ url('/profile/' . auth()->user()->id) }}" class="btn btn-primary">Home</a>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->username }}
