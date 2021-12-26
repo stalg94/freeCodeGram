@@ -9,6 +9,11 @@ class Profile extends Model
 {
     protected $guarded = [];
 
+    public function profileImage()
+    {
+        $imagePath = ($this->image) ? $this->image : 'profile/hPGewkfUgKHBWcIVOO5cqZTlgEpD6HMkaxhCdkkZ.png';
+        return '/storage/'.$imagePath;
+    }
 
     public function user()
     {
